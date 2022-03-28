@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".activity.LoginPage">
+
+
+    <TextView
+        android:id="@+id/JumpOver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:letterSpacing="0.3"
+        android:text="跳过"
+        android:textColor="#0091EA"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <ImageView
+        android:id="@+id/UserImage"
+        android:layout_width="170dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/CheckListLogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+
+    <EditText
+        android:id="@+id/UserNameOrNumber"
+        android:layout_width="120pt"
+        android:layout_height="50dp"
+        android:background="@drawable/round_editview"
+        android:drawableStart="@drawable/user"
+        android:drawablePadding="10dp"
+        android:inputType="phone|textEmailAddress"
+        android:letterSpacing="0.1"
+        android:paddingStart="10dp"
+        android:hint="请输入你的用户名或邮箱"
+        android:textSize="16sp"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserImage" />
+
+    <EditText
+        android:id="@+id/PasswordOrCode"
+        android:layout_width="120pt"
+        android:layout_height="50dp"
+        android:background="@drawable/round_editview"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:letterSpacing="0.1"
+        android:paddingStart="10dp"
+        android:hint="请输入用户密码"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserNameOrNumber"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <com.example.checklist.Customize.RoundButton
+        android:id="@+id/roundButtonOnSign"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.5"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:background_normal_color="#0091EA"
+        app:background_radius="18sp"
+        app:layout_constraintVertical_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordOrCode" />
+
+    <com.example.checklist.Customize.RoundButton
+        android:id="@+id/roundButtonOnLogin"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.5"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:background_normal_color="#0091EA"
+        app:background_radius="20dp"
+        app:layout_constraintVertical_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordOrCode" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.3"
+        android:text="其他登录方式"
+        android:textColor="#758692"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roundButtonOnLogin"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <com.example.checklist.Customize.RoundButton
+        android:id="@+id/QQLogin"
+        android:layout_width="100pt"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/qq"
+        android:paddingStart="10dp"
+        android:letterSpacing="0.3"
+        android:text="QQ账号登录"
+        android:textSize="16sp"
+        android:textColor="#0091EA"
+        app:background_normal_color="@color/white"
+        app:background_stroke_color="#0091EA"
+        app:background_stroke_width="1dp"
+        app:background_radius="15dp"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.example.checklist.Customize.RoundButton
+        android:id="@+id/HuaWeiLogin"
+        android:layout_width="100pt"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/huawei"
+        android:paddingStart="10dp"
+        android:letterSpacing="0.3"
+        android:text="华为账号登录"
+        android:textSize="16sp"
+        android:textColor="#CE0E2D"
+        app:background_normal_color="@color/white"
+        app:background_stroke_color="#CE0E2D"
+        app:background_stroke_width="1dp"
+        app:background_radius="15dp"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QQLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
