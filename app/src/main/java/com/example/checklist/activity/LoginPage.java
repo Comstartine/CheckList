@@ -3,6 +3,8 @@ package com.example.checklist.activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.checklist.R;
 
@@ -10,12 +12,15 @@ import io.alterac.blurkit.BlurLayout;
 
 public class LoginPage extends AppCompatActivity {
 
-    private BlurLayout blurLayout;
+    private Button button;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_page);
+
+        textView = findViewById(R.id.JumpOver);
 
     }
 
