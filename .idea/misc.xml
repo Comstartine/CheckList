@@ -3,16 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/CheckList/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2361111111111111" />
+        <entry key="..\:/CheckList/app/src/main/res/drawable/ic_menu.xml" value="0.128125" />
         <entry key="..\:/CheckList/app/src/main/res/drawable/password.xml" value="0.24358974358974358" />
         <entry key="..\:/CheckList/app/src/main/res/drawable/round_edit.xml" value="0.128125" />
         <entry key="..\:/CheckList/app/src/main/res/drawable/round_editview.xml" value="0.4" />
+        <entry key="..\:/CheckList/app/src/main/res/drawable/test.xml" value="0.9107142857142857" />
         <entry key="..\:/CheckList/app/src/main/res/drawable/user.xml" value="0.24358974358974358" />
         <entry key="..\:/CheckList/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/calendar_fragment.xml" value="0.23125" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/header_sidebar.xml" value="0.2" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/home_fragment.xml" value="0.23125" />
         <entry key="..\:/CheckList/app/src/main/res/layout/login_page.xml" value="0.4" />
-        <entry key="..\:/CheckList/app/src/main/res/layout/navigation_pager.xml" value="0.23125" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/navigation_pager.xml" value="0.2" />
         <entry key="..\:/CheckList/app/src/main/res/layout/pagerone.xml" value="0.23125" />
         <entry key="..\:/CheckList/app/src/main/res/layout/pagerthree.xml" value="0.23125" />
         <entry key="..\:/CheckList/app/src/main/res/layout/pagertwo.xml" value="0.23125" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/setting_fragment.xml" value="0.23125" />
+        <entry key="..\:/CheckList/app/src/main/res/menu/menu_bottomnavigation.xml" value="0.23125" />
+        <entry key="..\:/CheckList/app/src/main/res/menu/menu_sidebar.xml" value="0.23125" />
+        <entry key="..\:/CheckList/app/src/main/res/menu/toolbar.xml" value="0.23125" />
         <entry key="..\:/CheckList/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.24358974358974358" />
       </map>
     </option>

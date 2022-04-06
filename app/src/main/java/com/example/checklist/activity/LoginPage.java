@@ -2,7 +2,9 @@ package com.example.checklist.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -21,6 +23,9 @@ public class LoginPage extends AppCompatActivity {
         setContentView(R.layout.login_page);
 
         textView = findViewById(R.id.JumpOver);
+        textView.setOnClickListener((View v) -> {
+            startActivity(new Intent(this,NavigationPager.class));
+        });
 
     }
 

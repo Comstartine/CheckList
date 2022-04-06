@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/pencil"
+            android:icon="@drawable/pencil"
+            android:title="pencil"/>
+        <item
+            android:id="@+id/suitcase"
+            android:icon="@drawable/suitcase"
+            android:title="suitcase"/>
+        <item
+            android:id="@+id/folder"
+            android:icon="@drawable/folder"
+            android:title="folder"/>
+        <item
+            android:id="@+id/calendar"
+            android:icon="@drawable/calendar"
+            android:title="calendar"/>
+        <item
+            android:id="@+id/notifications"
+            android:icon="@drawable/notifications"
+            android:title="notifications"/>
+    </group>
+</menu>
