@@ -23,7 +23,7 @@ public interface UserDao {
     public List<User> loadAllUsers();
     /*删除id为xxx对象*/
     @Delete
-    public void deleteUser(User user,Long id);
+    public void deleteUser(User user);
 
 
 }

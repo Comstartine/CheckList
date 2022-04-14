@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/todaytask"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <CheckBox
+        android:id="@+id/task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:button="@null"
+        android:gravity="center|left"
+        android:letterSpacing="0.1"
+        android:text="任务1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tasklabel"
+        android:textSize="16sp"
+        android:text="标签1"
+        android:textStyle="bold"
+        android:textColor="@color/cadetblue"
+        android:background="@drawable/label_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task" />
+
+    <TextView
+        android:id="@+id/task_lasttime"
+        android:text="截止时间：今天11：00"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        app:layout_constraintHorizontal_bias="0.9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tasklabel"
+        app:layout_constraintTop_toBottomOf="@+id/task" />
+</androidx.constraintlayout.widget.ConstraintLayout>

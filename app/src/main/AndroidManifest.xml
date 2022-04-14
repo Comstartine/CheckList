@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.checklist">
-
+<!--    网络权限-->
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<!--    WIFI状态-->
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE"/>
+<!--    相机权限-->
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA"/>
+<!--    读取日程权限-->
+    <uses-permission-sdk-23 android:name="android.permission.READ_CALENDAR"/>
+<!--    振动权限-->
+    <uses-permission-sdk-23 android:name="android.permission.VIBRATE"/>
+<!--    定位权限-->
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<!--    android 10所需定位权限-->
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+<!--    写入外部存储权限-->
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<!--使用麦克风权限-->
+    <uses-permission-sdk-23 android:name="android.permission.RECORD_AUDIO"/>
+<!--读取短信内容-->
+    <uses-permission-sdk-23 android:name="android.permission.READ_SMS"/>
     <application
         android:name=".CheckListApplication"
         android:allowBackup="true"

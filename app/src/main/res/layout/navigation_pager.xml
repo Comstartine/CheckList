@@ -19,11 +19,11 @@
             android:layout_height="0dp"
             android:layout_weight="1"/>
 
-        <FrameLayout
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:id="@+id/frameLayout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="6" >
+            android:layout_weight="8" >
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/floatBtn"
@@ -32,7 +32,7 @@
             android:layout_gravity="bottom|end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        </FrameLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -44,10 +44,10 @@
 
 
     </LinearLayout>
-
+<!--滑动菜单栏控件-->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/sidebar"
-        android:layout_gravity="left"
+        android:layout_gravity="start"
         app:menu="@menu/menu_sidebar"
         app:headerLayout="@layout/header_sidebar"
         android:layout_width="match_parent"

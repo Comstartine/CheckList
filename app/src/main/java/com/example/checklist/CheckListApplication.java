@@ -8,6 +8,7 @@ import android.content.Context;
 * */
 public class CheckListApplication extends Application {
     private static Context context;
+    private static final String SERVER_ADDRESS = "120.78.13.17";
 
     @Override
     public void onCreate() {
@@ -18,5 +19,6 @@ public class CheckListApplication extends Application {
     public static Context getContext(){
         return context;
     }
+    public static String getServerAddress(){return SERVER_ADDRESS;}
 
 }

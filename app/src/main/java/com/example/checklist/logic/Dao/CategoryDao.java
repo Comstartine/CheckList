@@ -14,11 +14,11 @@ import java.util.List;
 public interface CategoryDao {
     /*插入一个新类别*/
     @Insert
-    public Long insertCategory(Category category);
+    public long insertCategory(Category category);
     /*读取表中所有类别信息*/
     @Query("select * from category")
     public List<Category> loadAllUsers();
     /*删除id为xxx分类*/
     @Delete
-    public void deleteUser(Category category,Long id);
+    public void deleteUser(Category category);
 }
