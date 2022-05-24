@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActicity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lavender"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/re_phoneNumber"
+            android:layout_margin="10dp"
+            android:hint="@string/login_user"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="10dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/round_editview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <EditText
+            android:id="@+id/re_password_one"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:paddingStart="10dp"
+            android:drawableStart="@drawable/password"
+            android:hint="@string/login_password"
+            android:background="@drawable/round_editview"
+            android:layout_height="50dp"/>
+        <EditText
+            android:id="@+id/re_password_two"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:paddingStart="10dp"
+            android:drawableStart="@drawable/password"
+            android:hint="@string/login_password"
+            android:background="@drawable/round_editview"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+    <com.example.checklist.Customize.RoundButton
+        android:layout_marginTop="26dp"
+        android:layout_marginHorizontal="30dp"
+        android:id="@+id/re_register"
+        android:text="@string/login_register"
+        app:background_radius="20dp"
+        app:background_normal_color="@color/lavender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

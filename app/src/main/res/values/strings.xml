@@ -1,3 +1,40 @@
 <resources>
+    <!--英文-->
     <string name="app_name">CheckList</string>
+    <string name="home_icon">home</string>
+    <string name="home_upcoming">To do</string>
+    <string name="home_overdue">Time out</string>
+    <string name="home_all_task">All task</string>
+    <string name="task_icon">tasklist</string>
+    <string name="task_no_task">You have a free day</string>
+    <string name="task_hint">It\'s all clear. Relax and recharge</string>
+    <string name="setting_icon">settings</string>
+    <string name="setting_sign_in">Sign in </string>
+    <string name="setting_font">Font</string>
+    <string name="setting_remind">Remind</string>
+    <string name="setting_notice">Notice</string>
+    <string name="setting_exterior">Exterior</string>
+    <string name="setting_account">Account</string>
+    <string name="setting_more_settings">More settings</string>
+    <string name="setting_feedback">Abnormal feedback</string>
+    <string name="setting_about">About</string>
+    <string name="setting_sign_out">Sign out</string>
+    <!--侧边栏-->
+    <string name="sidebar_today">Today</string>
+    <string name="sidebar_collection_box">Collection box</string>
+    <string name="sidebar_label">Label</string>
+    <string name="sidebar_add_list">Add a List</string>
+    <string name="sidebar_welcome">Welcome</string>
+    <!--登入界面-->
+    <string name="login_jump">Jump over</string>
+    <string name="login_user">Username or Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_register">Register</string>
+    <string name="login_in">Sign in</string>
+    <string name="login_other">Other login methods</string>
+    <string name="login_qq">QQ account login</string>
+    <string name="login_huawei">Huawei account login</string>
+    <!--中文-->
+
+
 </resources>

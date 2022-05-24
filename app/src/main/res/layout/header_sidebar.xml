@@ -23,7 +23,7 @@
         android:id="@+id/user_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="登录或者注册"
+        android:text="@string/setting_sign_in"
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="@color/white"
@@ -54,5 +54,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/user_search"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sidebar_add_list"
+        android:text="@string/sidebar_add_list"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

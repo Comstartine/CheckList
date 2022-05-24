@@ -1,53 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.checklist">
-<!--    网络权限-->
-    <uses-permission-sdk-23 android:name="android.permission.INTERNET"/>
-    <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE"/>
-<!--    WIFI状态-->
-    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE"/>
-<!--    相机权限-->
-    <uses-permission-sdk-23 android:name="android.permission.CAMERA"/>
-<!--    读取日程权限-->
-    <uses-permission-sdk-23 android:name="android.permission.READ_CALENDAR"/>
-<!--    振动权限-->
-    <uses-permission-sdk-23 android:name="android.permission.VIBRATE"/>
-<!--    定位权限-->
-    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION"/>
-<!--    android 10所需定位权限-->
-    <uses-permission-sdk-23 android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
-<!--    写入外部存储权限-->
-    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-<!--使用麦克风权限-->
-    <uses-permission-sdk-23 android:name="android.permission.RECORD_AUDIO"/>
-<!--读取短信内容-->
-    <uses-permission-sdk-23 android:name="android.permission.READ_SMS"/>
+    <!-- 网络权限 -->
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- WIFI状态 -->
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 相机权限 -->
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" /> <!-- 读取日程权限 -->
+    <uses-permission-sdk-23 android:name="android.permission.READ_CALENDAR" /> <!-- 振动权限 -->
+    <uses-permission-sdk-23 android:name="android.permission.VIBRATE" /> <!-- 定位权限 -->
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- android 10所需定位权限 -->
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- 写入外部存储权限 -->
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 使用麦克风权限 -->
+    <uses-permission-sdk-23 android:name="android.permission.RECORD_AUDIO" /> <!-- 读取短信内容 -->
+    <uses-permission-sdk-23 android:name="android.permission.READ_SMS" />
+
+    <queries>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+    </queries>
+
     <application
         android:name=".CheckListApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/icon"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.CheckList">
         <activity
+            android:name=".activity.RegisterActicity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.AboutVersion"
+            android:exported="true" />
+        <activity
+            android:name=".activity.AccountSetting"
+            android:exported="true" />
+        <activity
             android:name=".activity.NavigationPager"
             android:exported="true"
-            android:label="欢迎">
+            android:label="欢迎" />
+        <activity
+            android:name=".activity.LoginPage"
+            android:exported="true" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activity.LoginPage"
-            android:exported="true"></activity>
-        <activity
-            android:name=".activity.MainActivity"
-            android:exported="true">
-        </activity>
+
+        <meta-data
+            android:name="com.huawei.hms.client.channel.androidMarket"
+            android:value="false" />
     </application>
 
 </manifest>

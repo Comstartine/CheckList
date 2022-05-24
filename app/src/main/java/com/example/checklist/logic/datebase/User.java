@@ -9,12 +9,31 @@ public class User {
     private String name;
     private String phoneNumber;
     private String address;
+    private String ambiguous_position;
+    private String precise_location;
+    //private String icon;
+
 
     public User(String name, String phoneNumber) {
         this.name = name;
         this.phoneNumber = phoneNumber;
     }
 
+    public String getAmbiguous_position() {
+        return ambiguous_position;
+    }
+
+    public void setAmbiguous_position(String ambiguous_position) {
+        this.ambiguous_position = ambiguous_position;
+    }
+
+    public String getPrecise_location() {
+        return precise_location;
+    }
+
+    public void setPrecise_location(String precise_location) {
+        this.precise_location = precise_location;
+    }
 
     public long getId() {
         return id;

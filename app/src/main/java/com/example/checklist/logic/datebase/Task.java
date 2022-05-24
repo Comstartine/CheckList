@@ -3,7 +3,7 @@ package com.example.checklist.logic.datebase;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
-@Entity
+@Entity(tableName = "task")
 public class Task {
     @PrimaryKey(autoGenerate = true)
     private long id = 0;

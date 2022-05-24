@@ -4,22 +4,18 @@
         <item
             android:id="@+id/pencil"
             android:icon="@drawable/pencil"
-            android:title="pencil"/>
+            android:title="@string/sidebar_today"/>
         <item
             android:id="@+id/suitcase"
             android:icon="@drawable/suitcase"
-            android:title="suitcase"/>
-        <item
-            android:id="@+id/folder"
-            android:icon="@drawable/folder"
-            android:title="folder"/>
+            android:title="@string/sidebar_collection_box"/>
         <item
             android:id="@+id/calendar"
             android:icon="@drawable/calendar"
-            android:title="calendar"/>
+            android:title="@string/sidebar_label"/>
         <item
             android:id="@+id/notifications"
             android:icon="@drawable/notifications"
-            android:title="notifications"/>
+            android:title="@string/sidebar_welcome"/>
     </group>
 </menu>

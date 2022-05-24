@@ -59,16 +59,9 @@ public class NavigationPager extends AppCompatActivity {
         //app权限申请
         AppGetPermission();
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
         drawerLayout = findViewById(R.id.drawerlayout);
         NavigationView navigationView = findViewById(R.id.sidebar);
-        ActionBar actionBar = getSupportActionBar();
-
-        if(actionBar != null){
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
-        }
 
 
         //设置侧边栏全屏打开
@@ -168,7 +161,7 @@ public class NavigationPager extends AppCompatActivity {
         }
         return true;
     }
-
+    //设置侧边栏的拉出方式
     static class DrawerLayoutHelper{
         public static void setDrawerLeftEdgeSize(Activity activity, DrawerLayout drawerLayout,
                                                  float displayWithPerecntage){
@@ -201,7 +194,7 @@ public class NavigationPager extends AppCompatActivity {
             }
         }
         public static void setDrawerLeftEdgeFullScreen(Activity activity,DrawerLayout drawerLayout){
-            setDrawerLeftEdgeSize(activity,drawerLayout,1.0f);
+            setDrawerLeftEdgeSize(activity,drawerLayout,0.5f);
         }
     }
 }

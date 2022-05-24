@@ -4,9 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/CheckList/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2361111111111111" />
+        <entry key="..\:/CheckList/app/src/main/res/drawable/bg_ripple.xml" value="0.2361111111111111" />
         <entry key="..\:/CheckList/app/src/main/res/drawable/home_relativelayout.xml" value="0.264" />
+        <entry key="..\:/CheckList/app/src/main/res/drawable/ic_add.xml" value="0.24166666666666667" />
         <entry key="..\:/CheckList/app/src/main/res/drawable/ic_menu.xml" value="0.128125" />
         <entry key="..\:/CheckList/app/src/main/res/drawable/ic_notification.xml" value="0.225" />
+        <entry key="..\:/CheckList/app/src/main/res/drawable/ic_vector.xml" value="0.24358974358974358" />
         <entry key="..\:/CheckList/app/src/main/res/drawable/label_textview.xml" value="0.225" />
         <entry key="..\:/CheckList/app/src/main/res/drawable/password.xml" value="0.24358974358974358" />
         <entry key="..\:/CheckList/app/src/main/res/drawable/radiobutton.xml" value="0.225" />
@@ -15,17 +18,21 @@
         <entry key="..\:/CheckList/app/src/main/res/drawable/test.xml" value="0.9107142857142857" />
         <entry key="..\:/CheckList/app/src/main/res/drawable/todaytask.xml" value="0.225" />
         <entry key="..\:/CheckList/app/src/main/res/drawable/user.xml" value="0.24358974358974358" />
-        <entry key="..\:/CheckList/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/CheckList/app/src/main/res/layout/calendar_fragment.xml" value="0.23125" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/activity_about_version.xml" value="0.2557291666666667" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/activity_account_setting.xml" value="0.2557291666666667" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/activity_register.xml" value="0.2557291666666667" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/calendar_fragment.xml" value="0.264" />
         <entry key="..\:/CheckList/app/src/main/res/layout/header_sidebar.xml" value="0.2" />
         <entry key="..\:/CheckList/app/src/main/res/layout/home_fragment.xml" value="0.264" />
         <entry key="..\:/CheckList/app/src/main/res/layout/item_todaytask.xml" value="0.23125" />
-        <entry key="..\:/CheckList/app/src/main/res/layout/login_page.xml" value="0.4" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/login_page.xml" value="0.3216145833333333" />
         <entry key="..\:/CheckList/app/src/main/res/layout/navigation_pager.xml" value="0.2" />
         <entry key="..\:/CheckList/app/src/main/res/layout/pagerone.xml" value="0.23125" />
         <entry key="..\:/CheckList/app/src/main/res/layout/pagerthree.xml" value="0.23125" />
         <entry key="..\:/CheckList/app/src/main/res/layout/pagertwo.xml" value="0.23125" />
-        <entry key="..\:/CheckList/app/src/main/res/layout/setting_fragment.xml" value="0.23125" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/pup_general_settings.xml" value="0.2557291666666667" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/setting_fragment.xml" value="0.264" />
         <entry key="..\:/CheckList/app/src/main/res/menu/menu_bottomnavigation.xml" value="0.23125" />
         <entry key="..\:/CheckList/app/src/main/res/menu/menu_sidebar.xml" value="0.23125" />
         <entry key="..\:/CheckList/app/src/main/res/menu/toolbar.xml" value="0.23125" />

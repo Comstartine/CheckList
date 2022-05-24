@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你所想反馈的问题："
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/Edit_feedback"
+        android:lines="5"
+        android:gravity="top"
+        android:hint="请输入你的反馈内容"
+        android:background="@color/aliceblue"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/yes"
+            android:text="确认"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/no"
+            android:text="取消"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>
