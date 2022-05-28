@@ -2,10 +2,9 @@ package com.example.checklist.adapter;
 
 import android.content.Context;
 import android.text.TextUtils;
-import android.view.View;
 
 import com.example.checklist.R;
-import com.example.checklist.logic.datebase.Task;
+import com.example.checklist.logic.entity.Task;
 
 import java.util.List;
 

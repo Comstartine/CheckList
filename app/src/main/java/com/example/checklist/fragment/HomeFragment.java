@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,7 +18,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.checklist.R;
 import com.example.checklist.adapter.Taskadapter;
-import com.example.checklist.logic.datebase.Task;
+import com.example.checklist.logic.entity.Task;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,7 +48,7 @@ public class HomeFragment extends Fragment {
             String time = String.valueOf(i*60);
             String name = "标签" + i;
             String text = "任务" + i;
-            ans.add(new Task(time,name,text));
+            ans.add(new Task(name));
         }
 
         refreshLayout = view.findViewById(R.id.swipeRefreshLayout);
@@ -89,7 +88,7 @@ public class HomeFragment extends Fragment {
                     String time = String.valueOf(i*60);
                     String name = "标签" + i;
                     String text = "任务" + i;
-                    ans.add(new Task(time,name,text));
+                    ans.add(new Task(name));
                 }
                 taskadapter.notifyDataSetChanged();
                 refreshLayout.setRefreshing(false);

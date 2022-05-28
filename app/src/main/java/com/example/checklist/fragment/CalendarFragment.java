@@ -16,7 +16,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.checklist.R;
 import com.example.checklist.adapter.Taskadapter;
-import com.example.checklist.logic.datebase.Task;
+import com.example.checklist.logic.entity.Task;
 import com.haibin.calendarview.Calendar;
 import com.haibin.calendarview.CalendarLayout;
 import com.haibin.calendarview.CalendarView;
@@ -104,7 +104,7 @@ public class CalendarFragment extends Fragment implements  CalendarView.OnCalend
                     String time = String.valueOf(i*60);
                     String name = "标签" + i;
                     String text = "任务" + i;
-                    ans.add(new Task(time,name,text));
+                    ans.add(new Task(name));
                 }
                 adapter.notifyDataSetChanged();
                 refreshLayout.setRefreshing(false);
@@ -145,7 +145,7 @@ public class CalendarFragment extends Fragment implements  CalendarView.OnCalend
             String time = String.valueOf(i*60);
             String name = "标签" + i;
             String text = "任务" + i;
-            ans.add(new Task(time,name,text));
+            ans.add(new Task(name));
         }
         adapter = new Taskadapter(getContext(),ans,R.layout.item_todaytask);
         mRecyclerView = view.findViewById(R.id.recyclerView);

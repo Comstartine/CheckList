@@ -6,24 +6,27 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.checklist.logic.datebase.User;
+import com.example.checklist.logic.entity.User;
 
 import java.util.List;
 
 @Dao
 public interface UserDao {
-    /*插入一个新对象*/
-    @Insert
-    public Long insertUser(User user);
-    /*更新对象*/
-    @Update
-    public void updateUser(User newUser);
-    /*读取表中所有用户信息*/
-    @Query("select * from user")
-    public List<User> loadAllUsers();
-    /*删除id为xxx对象*/
-    @Delete
-    public void deleteUser(User user);
+
+    @Insert //创建用户账号（注册）
+    void insertUser(User... user);
+
+    @Delete //注销用户账号
+    void deleteUser(User... user);
+
+    @Update     //根据用户修改用户信息
+    int updateUser(User... user);
+
+    @Query("select * from user where user_id = :userId")    //登入验证用户密码
+    User getUser(Long userId);
+
+    @Query("select * from user") //查询用户（管理员权限）
+    List<User> getUsers();
 
 
 }
