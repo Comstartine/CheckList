@@ -20,6 +20,10 @@ public class Status {
         this.status_taskName = status_taskName;
     }
 
+    public void setStatus_id(long status_id) {
+        this.status_id = status_id;
+    }
+
     public long getStatus_id() {
         return status_id;
     }

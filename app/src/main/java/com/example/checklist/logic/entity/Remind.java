@@ -22,6 +22,10 @@ public class Remind {
         this.remind_day = remind_day;
     }
 
+    public void setRemind_id(long remind_id) {
+        this.remind_id = remind_id;
+    }
+
     public long getRemind_id() {
         return remind_id;
     }

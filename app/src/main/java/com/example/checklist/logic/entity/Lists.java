@@ -20,6 +20,10 @@ public class Lists {
         this.list_name = list_name;
     }
 
+    public void setList_id(long list_id) {
+        this.list_id = list_id;
+    }
+
     public long getList_id() {
         return list_id;
     }

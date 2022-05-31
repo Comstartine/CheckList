@@ -1,39 +1,40 @@
 <resources>
-    <!--英文-->
     <string name="app_name">CheckList</string>
-    <string name="home_icon">home</string>
-    <string name="home_upcoming">To do</string>
-    <string name="home_overdue">Time out</string>
-    <string name="home_all_task">All task</string>
+    <string name="home_icon">主页</string>
+    <string name="home_upcoming">待办事项</string>
+    <string name="home_overdue">超期</string>
+    <string name="home_all_task">全部事项</string>
     <string name="task_icon">tasklist</string>
     <string name="task_no_task">You have a free day</string>
     <string name="task_hint">It\'s all clear. Relax and recharge</string>
-    <string name="setting_icon">settings</string>
-    <string name="setting_sign_in">Sign in </string>
-    <string name="setting_font">Font</string>
-    <string name="setting_remind">Remind</string>
-    <string name="setting_notice">Notice</string>
-    <string name="setting_exterior">Exterior</string>
-    <string name="setting_account">Account</string>
-    <string name="setting_more_settings">More settings</string>
-    <string name="setting_feedback">Abnormal feedback</string>
-    <string name="setting_about">About</string>
-    <string name="setting_sign_out">Sign out</string>
+    <string name="setting_icon">设置</string>
+    <string name="setting_sign_in">登录</string>
+    <string name="setting_font">字体</string>
+    <string name="setting_remind">提醒</string>
+    <string name="setting_notice">记录</string>
+    <string name="setting_exterior">主题</string>
+    <string name="setting_account">账号设置</string>
+    <string name="setting_more_settings">更多设置</string>
+    <string name="setting_feedback">问题与反馈</string>
+    <string name="setting_about">关于</string>
+    <string name="setting_sign_out">退出登录</string>
     <!--侧边栏-->
-    <string name="sidebar_today">Today</string>
-    <string name="sidebar_collection_box">Collection box</string>
-    <string name="sidebar_label">Label</string>
-    <string name="sidebar_add_list">Add a List</string>
-    <string name="sidebar_welcome">Welcome</string>
+    <string name="sidebar_today">今天</string>
+    <string name="sidebar_collection_box">收集箱</string>
+    <string name="sidebar_label">标签</string>
+    <string name="sidebar_add_list">添加清单</string>
+    <string name="sidebar_welcome">欢迎</string>
     <!--登入界面-->
-    <string name="login_jump">Jump over</string>
-    <string name="login_user">Username or Email</string>
-    <string name="login_password">Password</string>
-    <string name="login_register">Register</string>
-    <string name="login_in">Sign in</string>
-    <string name="login_other">Other login methods</string>
-    <string name="login_qq">QQ account login</string>
-    <string name="login_huawei">Huawei account login</string>
+    <string name="login_jump">跳过</string>
+    <string name="login_user">用户名或邮箱</string>
+    <string name="login_password">密码</string>
+    <string name="login_register">注册</string>
+    <string name="login_in">登录</string>
+    <string name="login_other">其他登录方式</string>
+    <string name="login_qq">QQ账号登录</string>
+    <string name="login_huawei">华为账号登录</string>
+    <!--添加日程界面-->
+    <string name="add_ReadyToDo">准备做什么</string>
     <!--中文-->
 
 

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activity.AddTask">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/at_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:collapseIcon="@drawable/ic_send"
+            app:menu="@menu/toolbar_menu_addtask"
+            app:navigationIcon="@drawable/ic_back">
+
+            <Spinner
+                android:id="@+id/at_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_below="@+id/at_toolbar"
+            android:layout_above="@+id/other_btn"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/at_selectTime"
+                android:textStyle="bold"
+                android:paddingStart="10dp"
+                android:textColor="@color/cornflowerblue"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+            <EditText
+                android:id="@+id/at_ReadyTodo"
+                android:hint="string:/add_ReadyToDo"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"/>
+
+            <me.gujun.android.taggroup.TagGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/at_tags"
+                style="@style/TagGroup"/>
+            <TextView
+                android:id="@+id/at_text"
+                android:hint="描述"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:minLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/other_btn"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/at_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_tag" />
+
+            <ImageView
+                android:id="@+id/at_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_toRightOf="@+id/at_tag"
+                android:src="@drawable/ic_file_addition" />
+
+            <ImageView
+                android:id="@+id/at_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_toRightOf="@+id/at_file"
+                android:src="@drawable/ic_flag" />
+
+            <ImageView
+                android:id="@+id/at_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_toRightOf="@+id/at_priority"
+                android:src="@drawable/ic_image_files" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

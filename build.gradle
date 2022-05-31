@@ -6,6 +6,7 @@ buildscript {
         maven {
             url 'https://developer.huawei.com/repo/'
         }
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.3"

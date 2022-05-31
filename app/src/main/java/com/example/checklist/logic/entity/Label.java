@@ -18,6 +18,14 @@ public class Label {
         this.label_color = label_color;
     }
 
+    public long getLabel_id() {
+        return label_id;
+    }
+
+    public void setLabel_id(long label_id) {
+        this.label_id = label_id;
+    }
+
     public String getLabel_name() {
         return label_name;
     }

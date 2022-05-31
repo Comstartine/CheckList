@@ -21,6 +21,10 @@ public class Files {
         this.file_taskId = file_taskId;
     }
 
+    public void setFile_id(long file_id) {
+        this.file_id = file_id;
+    }
+
     public long getFile_id() {
         return file_id;
     }

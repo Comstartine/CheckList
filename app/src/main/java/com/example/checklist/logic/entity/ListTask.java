@@ -7,8 +7,8 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "list_task",primaryKeys = {"list_task_taskId","list_task_listId"})
 public class ListTask {
-    private Long list_task_taskId;  //日程id
-    private Long list_task_listId;  //清单id
+    private long list_task_taskId = -1;  //日程id
+    private long list_task_listId = -1;  //清单id
 
     public ListTask(Long list_task_taskId, Long list_task_listId) {
         this.list_task_taskId = list_task_taskId;

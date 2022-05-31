@@ -1,35 +1,32 @@
 package com.example.checklist.activity;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.appcompat.app.ActionBar;
 import androidx.core.view.GravityCompat;
 import androidx.customview.widget.ViewDragHelper;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Point;
-import android.icu.text.DateTimePatternGenerator;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.Toast;
 
+import com.example.checklist.Customize.LogUtils;
 import com.example.checklist.R;
 import com.example.checklist.fragment.CalendarFragment;
 import com.example.checklist.fragment.HomeFragment;
 import com.example.checklist.fragment.SetFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.permissionx.guolindev.PermissionX;
 import com.permissionx.guolindev.callback.ExplainReasonCallbackWithBeforeParam;
@@ -39,17 +36,17 @@ import com.permissionx.guolindev.request.ExplainScope;
 import com.permissionx.guolindev.request.ForwardScope;
 
 import java.lang.reflect.Field;
-import java.security.Permission;
-import java.util.ArrayList;
 import java.util.List;
 
 public class NavigationPager extends AppCompatActivity {
 
-    private DrawerLayout drawerLayout;
+    private static final String TAG = "Home";
 
+    private DrawerLayout drawerLayout;
     private FragmentManager fragmentManager;
     private FragmentTransaction transaction;
     private Fragment fg1,fg2,fg3;
+    private FloatingActionButton floatBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +55,6 @@ public class NavigationPager extends AppCompatActivity {
 
         //app权限申请
         AppGetPermission();
-
 
         drawerLayout = findViewById(R.id.drawerlayout);
         NavigationView navigationView = findViewById(R.id.sidebar);
@@ -79,27 +75,36 @@ public class NavigationPager extends AppCompatActivity {
                 case R.id.home:
                     if(fg1 == null){
                         fg1 = new HomeFragment();
+
                     }
+                    LogUtils.d(TAG,"fg1启动成功");
                     replaceFragment(fg1);
                     break;
-                case R.id.calendar:
+                case R.id.tasks:
                     if(fg2 == null){
                         fg2 = new CalendarFragment();
                     }
+                    LogUtils.d(TAG,"fg2启动成功");
                     replaceFragment(fg2);
                     break;
                 case R.id.set:
                     if(fg3 == null){
                         fg3 = new SetFragment();
                     }
+                    LogUtils.d(TAG,"fg3启动成功");
                     replaceFragment(fg3);
                     break;
                 default:break;
             }
             return true;
         });
+        /*弹出窗*/
+        floatBtn = findViewById(R.id.floatBtn);
+        floatBtn.setOnClickListener((View v) -> {
+            Toast.makeText(this, "success", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this,AddTask.class));
+        });
     }
-
 
     /*权限申请*/
     private void AppGetPermission() {

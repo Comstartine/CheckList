@@ -2,7 +2,7 @@ package com.example.checklist.Customize;
 
 import android.util.Log;
 /*测试所需的日志类*/
-public class LogUtil {
+public class LogUtils {
 
     public static final int VERBOSE = 1;
     public static final int DEBUG = 2;

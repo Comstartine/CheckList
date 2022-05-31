@@ -22,6 +22,14 @@ public class Location {
         this.location_taskId = location_taskId;
     }
 
+    public long getLocation_id() {
+        return location_id;
+    }
+
+    public void setLocation_id(long location_id) {
+        this.location_id = location_id;
+    }
+
     public String getLocation_accurate() {
         return location_accurate;
     }

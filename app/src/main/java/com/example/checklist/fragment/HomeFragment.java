@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.example.checklist.Customize.Tasks;
 import com.example.checklist.R;
 import com.example.checklist.adapter.Taskadapter;
 import com.example.checklist.logic.entity.Task;
@@ -29,7 +30,7 @@ public class HomeFragment extends Fragment {
     private RecyclerView todaytask;
     private SwipeRefreshLayout refreshLayout;
     private Taskadapter taskadapter;
-    private List<Task> ans;
+    private List<Tasks> ans;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -48,7 +49,7 @@ public class HomeFragment extends Fragment {
             String time = String.valueOf(i*60);
             String name = "标签" + i;
             String text = "任务" + i;
-            ans.add(new Task(name));
+            ans.add(new Tasks(name));
         }
 
         refreshLayout = view.findViewById(R.id.swipeRefreshLayout);
@@ -88,7 +89,7 @@ public class HomeFragment extends Fragment {
                     String time = String.valueOf(i*60);
                     String name = "标签" + i;
                     String text = "任务" + i;
-                    ans.add(new Task(name));
+                    ans.add(new Tasks(name));
                 }
                 taskadapter.notifyDataSetChanged();
                 refreshLayout.setRefreshing(false);

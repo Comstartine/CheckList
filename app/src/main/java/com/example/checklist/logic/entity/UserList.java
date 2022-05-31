@@ -6,8 +6,8 @@ import androidx.room.Entity;
 @Entity(tableName = "user_list",primaryKeys = {"user_list_listId","user_list_userId"})
 public class UserList {
 
-    private Long user_list_listId;  //清单id
-    private Long user_list_userId;  //用户id
+    private long user_list_listId = -1;  //清单id
+    private long user_list_userId = -1;  //用户id
 
     public UserList(Long user_list_listId, Long user_list_userId) {
         this.user_list_listId = user_list_listId;

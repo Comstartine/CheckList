@@ -62,5 +62,17 @@ dependencies {
     /*华为*/
     implementation 'com.huawei.hms:location:5.0.4.300'
     implementation 'com.huawei.hms:hwid:6.0.1.300'
+    /*dateTime Picker*/
+     //为了防止不必要的依赖冲突，0.0.3开始需要自行依赖google material库
+    implementation 'com.github.loperSeven:DateTimePicker:0.5.0'//具体版本请看顶部jitpack标识，如0.5.0,仅支持androidx
+    /*标签*/
+    implementation 'me.gujun.android.taggroup:library:1.4@aar'
+    /*Markwon插件*/
+    final def markwon_version = '4.6.2'
+
+    implementation"io.noties.markwon:core:$markwon_version"
+    implementation"io.noties.markwon:editor:$markwon_version"
+    implementation"io.noties.markwon:ext-latex:$markwon_version"
+    implementation"io.noties.markwon:image:$markwon_version"
 }
 apply plugin: 'com.huawei.agconnect'
