@@ -37,7 +37,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="8dp"
-                android:hint="@string/ReadyToDo"
+                android:hint="@string/add_ReadyToDo"
                 android:paddingTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"

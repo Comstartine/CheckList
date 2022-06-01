@@ -8,6 +8,7 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 //import com.example.checklist.logic.Dao.TaskDao;
+import com.example.checklist.logic.Dao.LabelDao;
 import com.example.checklist.logic.Dao.UserDao;
 //import com.example.checklist.logic.datebase.RecommendTask;
 import com.example.checklist.logic.entity.Files;
@@ -25,8 +26,9 @@ import com.example.checklist.logic.entity.UserList;
         Location.class, ListTask.class,Lists.class, Label.class, Files.class}, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
 
+        public abstract LabelDao labelDao();
         private static volatile AppDatabase instance;
-        public AppDatabase getInstance(Context context){
+        public static AppDatabase getInstance(Context context){
             if(instance == null){
                 synchronized (AppDatabase.class){
                     if(instance == null){

@@ -34,31 +34,37 @@
             <TextView
                 android:id="@+id/at_selectTime"
                 android:textStyle="bold"
-                android:paddingStart="10dp"
+                android:paddingStart="15dp"
+                android:drawableEnd="@drawable/ic_local"
+                android:paddingEnd="10dp"
+                android:gravity="center_vertical"
                 android:textColor="@color/cornflowerblue"
                 android:layout_width="match_parent"
-                android:layout_height="16dp"/>
+                android:layout_height="24dp"/>
 
             <EditText
                 android:id="@+id/at_ReadyTodo"
-                android:hint="string:/add_ReadyToDo"
+                android:paddingStart="15dp"
+                android:hint="@string/add_ReadyToDo"
                 android:background="@null"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"/>
 
             <me.gujun.android.taggroup.TagGroup
+                style="@style/TagGroup"
+                android:paddingStart="15dp"
+                android:id="@+id/at_tags" />
+            <EditText
+                android:id="@+id/at_edit"
+                android:gravity="top"
+                android:paddingStart="15dp"
+                android:background="@null"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/at_tags"
-                style="@style/TagGroup"/>
-            <TextView
-                android:id="@+id/at_text"
+                android:layout_height="match_parent"
                 android:hint="描述"
                 android:inputType="textMultiLine"
-                android:scrollbars="vertical"
                 android:minLines="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:scrollbars="vertical" />
         </LinearLayout>
 
         <RelativeLayout
@@ -72,6 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
+                android:paddingStart="15dp"
                 android:src="@drawable/ic_tag" />
 
             <ImageView

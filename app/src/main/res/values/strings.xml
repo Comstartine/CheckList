@@ -4,7 +4,7 @@
     <string name="home_upcoming">待办事项</string>
     <string name="home_overdue">超期</string>
     <string name="home_all_task">全部事项</string>
-    <string name="task_icon">tasklist</string>
+    <string name="task_icon">日程列表</string>
     <string name="task_no_task">You have a free day</string>
     <string name="task_hint">It\'s all clear. Relax and recharge</string>
     <string name="setting_icon">设置</string>
@@ -35,6 +35,12 @@
     <string name="login_huawei">华为账号登录</string>
     <!--添加日程界面-->
     <string name="add_ReadyToDo">准备做什么</string>
+    <string name="add_">准备做什么</string>
+    <!--标签弹出页面-->
+    <string name="dialog_labels_submit">确认</string>
+    <string name="dialog_labels_cancel">取消</string>
+    <string name="dialog_labels_add">添加标签</string>
+    <string name="dialog_labels_no_tag">请添加标签</string>
     <!--中文-->
 
 
