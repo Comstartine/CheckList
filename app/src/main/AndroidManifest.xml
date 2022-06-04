@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.checklist">
     <!-- 网络权限 -->
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- WIFI状态 -->
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 相机权限 -->
@@ -14,6 +15,11 @@
     <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 使用麦克风权限 -->
     <uses-permission-sdk-23 android:name="android.permission.RECORD_AUDIO" /> <!-- 读取短信内容 -->
     <uses-permission-sdk-23 android:name="android.permission.READ_SMS" />
+    <uses-permission-sdk-23 android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission-sdk-23 android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission-sdk-23 android:name="android.permission.BLUETOOTH" />
+    <uses-permission-sdk-23 android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
 
     <queries>
         <intent>
@@ -29,6 +35,9 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.CheckList">
+        <activity
+            android:name=".activity.ViewPicture"
+            android:exported="true" />
         <activity
             android:name=".activity.PopupTask"
             android:exported="true" />
@@ -47,7 +56,7 @@
         <activity
             android:name=".activity.NavigationPager"
             android:exported="true"
-            android:label="欢迎" >
+            android:label="欢迎">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -59,12 +68,20 @@
             android:exported="true" />
         <activity
             android:name=".activity.MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <meta-data
             android:name="com.huawei.hms.client.channel.androidMarket"
             android:value="false" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
     </application>
 
 </manifest>

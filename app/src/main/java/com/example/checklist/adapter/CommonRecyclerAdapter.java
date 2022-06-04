@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.checklist.Customize.LogUtils;
 import com.example.checklist.R;
 
 import java.util.List;
@@ -70,6 +71,7 @@ public abstract class CommonRecyclerAdapter<T> extends RecyclerView.Adapter<Recy
         inflater = LayoutInflater.from(context);
     }
 
+    //获取视图绑定对象
     @NonNull
     @Override
     public RecyclerViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -79,14 +81,12 @@ public abstract class CommonRecyclerAdapter<T> extends RecyclerView.Adapter<Recy
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerViewHolder holder, int position) {
-        if (listener != null) {
-            holder.itemView.setBackgroundResource(R.mipmap.ic_launcher);//设置背景
-        }
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (listener != null && view != null && recyclerView != null) {
                     int position = recyclerView.getChildAdapterPosition(view);
+                    LogUtils.d("FileAdapter onclick","" + position);
                     listener.onItemClick(recyclerView,view,position);
                 }
             }
@@ -102,7 +102,11 @@ public abstract class CommonRecyclerAdapter<T> extends RecyclerView.Adapter<Recy
                 return false;
             }
         });
-        convert(holder, list.get(position), position);
+        LogUtils.d("FileAdapter ","" + position);
+        if(list.size() == 0)
+            convert(holder, null, position);
+        else
+            convert(holder, list.get(position), position);
 
     }
 
@@ -111,14 +115,15 @@ public abstract class CommonRecyclerAdapter<T> extends RecyclerView.Adapter<Recy
         return list == null ? 0 : list.size();
     }
 
+    //短点击
     public void setOnItemClickListener(OnItemClickListener listener) {
         this.listener = listener;
     }
-
+    //长点击
     public void setOnItemLongClickListener(OnItemLongClickListener longClickListener) {
         this.longClickListener = longClickListener;
     }
-
+    //回收站监听
     public void setOnRecyclerViewListener(OnRecyclerViewListener onRecyclerViewListener){
         this.onRecyclerViewListener = onRecyclerViewListener;
     }

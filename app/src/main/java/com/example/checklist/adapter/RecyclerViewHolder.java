@@ -15,7 +15,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.example.checklist.Customize.LogUtils;
 import com.example.checklist.R;
+
+import java.net.URL;
+
+import retrofit2.http.Url;
 
 public class RecyclerViewHolder extends RecyclerView.ViewHolder {
 
@@ -72,12 +77,13 @@ public class RecyclerViewHolder extends RecyclerView.ViewHolder {
         Glide.with(context).load(imageId).into((ImageView) getView(viewId));
         return this;
     }
-    //Uri地址的图片资源
-    public RecyclerViewHolder setImageResource(int viewId, Uri uri){
+    //Url地址的图片资源
+    public RecyclerViewHolder setImageResource(int viewId, String url){
         RequestOptions requestOptions = new RequestOptions();
         requestOptions.error(R.mipmap.ic_launcher);
         requestOptions.placeholder(R.mipmap.ic_launcher);
-        Glide.with(context).load(uri).apply(requestOptions).into((ImageView) getView(viewId));
+        Glide.with(context).load(url).apply(requestOptions).into((ImageView) getView(viewId));
+        LogUtils.d("FileAdater","加载成功");
         return this;
     }
     //Bitmap资源

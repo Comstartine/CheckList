@@ -17,6 +17,7 @@
         <entry key="..\:/CheckList/app/src/main/res/drawable/radiobutton.xml" value="0.225" />
         <entry key="..\:/CheckList/app/src/main/res/drawable/round_edit.xml" value="0.128125" />
         <entry key="..\:/CheckList/app/src/main/res/drawable/round_editview.xml" value="0.4" />
+        <entry key="..\:/CheckList/app/src/main/res/drawable/shape_corner.xml" value="0.271875" />
         <entry key="..\:/CheckList/app/src/main/res/drawable/task_edit_style.xml" value="0.271875" />
         <entry key="..\:/CheckList/app/src/main/res/drawable/test.xml" value="0.9107142857142857" />
         <entry key="..\:/CheckList/app/src/main/res/drawable/todaytask.xml" value="0.225" />
@@ -27,11 +28,15 @@
         <entry key="..\:/CheckList/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/CheckList/app/src/main/res/layout/activity_popup_task.xml" value="0.2" />
         <entry key="..\:/CheckList/app/src/main/res/layout/activity_register.xml" value="0.2557291666666667" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/activity_view_picture.xml" value="0.23777173913043478" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/addtask_image_dialog.xml" value="0.24682971014492755" />
         <entry key="..\:/CheckList/app/src/main/res/layout/addtask_labels_dialog.xml" value="0.254981884057971" />
         <entry key="..\:/CheckList/app/src/main/res/layout/addtask_spinner_item.xml" value="0.24682971014492755" />
         <entry key="..\:/CheckList/app/src/main/res/layout/calendar_fragment.xml" value="0.264" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/dialog_cancel_or_ok.xml" value="0.23777173913043478" />
         <entry key="..\:/CheckList/app/src/main/res/layout/header_sidebar.xml" value="0.2" />
         <entry key="..\:/CheckList/app/src/main/res/layout/home_fragment.xml" value="0.264" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/item_add_image.xml" value="0.264" />
         <entry key="..\:/CheckList/app/src/main/res/layout/item_todaytask.xml" value="0.23125" />
         <entry key="..\:/CheckList/app/src/main/res/layout/login_page.xml" value="0.3216145833333333" />
         <entry key="..\:/CheckList/app/src/main/res/layout/navigation_pager.xml" value="0.2" />
@@ -43,12 +48,14 @@
         <entry key="..\:/CheckList/app/src/main/res/layout/setting_fragment.xml" value="0.264" />
         <entry key="..\:/CheckList/app/src/main/res/layout/taggroup_style.xml" value="0.24114583333333334" />
         <entry key="..\:/CheckList/app/src/main/res/layout/test.xml" value="0.24682971014492755" />
+        <entry key="..\:/CheckList/app/src/main/res/layout/view_pager_img.xml" value="0.23777173913043478" />
         <entry key="..\:/CheckList/app/src/main/res/menu/menu_bottomnavigation.xml" value="0.23125" />
         <entry key="..\:/CheckList/app/src/main/res/menu/menu_sidebar.xml" value="0.23125" />
         <entry key="..\:/CheckList/app/src/main/res/menu/toolbar.xml" value="0.23125" />
         <entry key="..\:/CheckList/app/src/main/res/menu/toolbar_menu_addtask.xml" value="0.2557291666666667" />
         <entry key="..\:/CheckList/app/src/main/res/menu/toolbar_menu_taskedit.xml" value="0.2557291666666667" />
         <entry key="..\:/CheckList/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.24358974358974358" />
+        <entry key="..\:/CheckList/app/src/main/res/xml/file_paths.xml" value="0.21875" />
       </map>
     </option>
   </component>
